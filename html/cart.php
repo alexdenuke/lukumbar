@@ -1,4 +1,4 @@
-<?php require('templates/header.php');
+<?php require('../templates/header.php');
 ?>
 <div class="cart-wrapper">
   <div class="container">
@@ -43,7 +43,7 @@
     </div>
   </div>
 </div>
-<?php require('templates/footer.php');?>
+<?php require('../templates/footer.php');?>
 <div class="popup">
   <div class="popup-body btn-close">
     <div class="popup-content">
@@ -58,7 +58,7 @@
     </div>
   </div>
 </div>
-    <script src="js/jq-3.5.1.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="/js/jq-3.5.1.js"></script>
+    <script src="/js/cart.js"></script>
     </body>
 </html>

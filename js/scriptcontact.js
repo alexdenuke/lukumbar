@@ -59,6 +59,8 @@ function headerCartAmount(cart) {
     headerCartAmount(cart);
  });
 
+// Карта яндекс мапс
+
  let center = [55.72799256899472,37.580606499999924];
 
  function init() {
@@ -80,4 +82,10 @@ let placemark = new ymaps.Placemark(center,{},{
 }
 
 ymaps.ready(init);
+
+let title = document.querySelector('.title');
+let description = document.querySelector('.description');
+
+title.textContent = 'Контакты нашего турецкого интернет-магазина лукумбар!';
+description.content = 'Интернет-магазин лукумбар это лучшие товары из Турции и не только!';
  

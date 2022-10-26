@@ -65,11 +65,11 @@ function loadCart() {
          text = 'Добавьте товар в корзину';
          text2 = '';
          text3 = ''; 
-         point = 'index.php'; 
+         point = '/index.php'; 
          showPopup(title,text,text2,text3,point);      
       }
       else {
-      $.getJSON('goods.json', function(data) {
+      $.getJSON('/json/goods.json', function(data) {
          let goods = data;
          let out = '';
          for (let id in cart) {
@@ -285,7 +285,7 @@ function sendEmail() {
    if (ename != '' && email != '' && ephone != '') {
       if (isEmpty(cart)) {
          $.post(
-            "core/mail.php",
+            "/core/mail.php",
             {
                "ename" : ename,
                "email" : email,
@@ -317,7 +317,7 @@ function sendEmail() {
                   cartOff.innerHTML = "";
                   cart = {};
                   localStorage.setItem('cart', JSON.stringify(cart)); // корзину в строку
-                  document.location.href = "tnx.php";
+                  document.location.href = "/html/tnx.php";
                   // setTimeout(redirect, 3000); 
 
                }
@@ -326,7 +326,7 @@ function sendEmail() {
                   text = '';
                   text2 = '';
                   text3 = '';
-                  point = "cart.php";
+                  point = "/html/cart.php";
                   showPopup(title,text,text2,text3,point);  
                }
 
@@ -369,7 +369,7 @@ function sendEmail() {
    if (ename != '' && email != '' && ephone != '' && estreet != '' && ehouse != '' && eroom != '') {
       if (isEmpty(cart)) {
          $.post(
-            "core/mail.php",
+            "/core/mail.php",
             {
                "ename" : ename,
                "email" : email,
@@ -419,7 +419,7 @@ function sendEmail() {
                   cartOff.innerHTML = "";
                   cart = {};
                   localStorage.setItem('cart', JSON.stringify(cart)); // корзину в строку
-                  document.location.href = "tnx.php";
+                  document.location.href = "/html/tnx.php";
                   // setTimeout(redirect, 3000);  
 
                }
@@ -428,7 +428,7 @@ function sendEmail() {
                   text = '';
                   text2 = '';
                   text3 = '';
-                  point = "cart.php";
+                  point = "/html/cart.php";
                   showPopup(title,text,text2,text3,point);  
                }
 

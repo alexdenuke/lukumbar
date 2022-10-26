@@ -58,3 +58,41 @@ function headerCartAmount(cart) {
     loadCart();
     headerCartAmount(cart);
  });
+
+
+let title = document.querySelector('.title');
+let description = document.querySelector('.description');
+console.log(window.location.pathname);
+if (window.location.pathname == '/html/cooperation.php') {
+   title.textContent = 'Сотрудничество с нашей компанией лукумбар.';
+   description.content = 'Сотрудничество и вакансии в интернет-магазине лукумбар.';
+}
+if (window.location.pathname == '/html/delivery.php') {
+   title.textContent = 'доставка турецких сладостей в Москве до двери.';
+   description.content = 'Условия доставки интернет-магазина лукумбар.';
+}
+if (window.location.pathname == '/html/discount.php') {
+   title.textContent = 'Скидки в интернет магазине лукумбар.';
+   description.content = 'разнообразные бонусы и скидки на различный ассортимент товаров.';
+}
+if (window.location.pathname == '/html/info.php') {
+   title.textContent = 'О компании лукумбар.';
+   description.content = 'Информация интернет-магазина по доставке турецких сладостей лукумбар.';
+}
+if (window.location.pathname == '/html/news.php') {
+   title.textContent = 'Новости нашего удивительного магазина.';
+   description.content = 'Всегда держим в курсе событий наших гостей из интернета и не только.';
+}
+if (window.location.pathname == '/html/privacypolicy.php') {
+   title.textContent = 'политика конфиденциальности сайта лукумбар.';
+   description.content = 'В любой момент можете ознакомиться сданным документом.';
+}
+if (window.location.pathname == '/html/qualitycontrol.php') {
+   title.textContent = 'контроль качество лукумбар.';
+   description.content = 'Информация о качестве нашей продукции.';
+}
+if (window.location.pathname == '/html/wholesale.php') {
+   title.textContent = 'Турецкий лукум и пахлава оптом!';
+   description.content = 'турецкие товары оптом по всей России и не только! Звоните, пишите. МАСШТАБНО!';
+}
+

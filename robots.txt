@@ -1,0 +1,31 @@
+Host: https://lukumbar.ru
+
+User-agent: Yandex
+Disallow: /core
+Disallow: /fonts
+Disallow: /html/cart.php
+Disallow: /html/tnx.php
+Disallow: /html/chocolate.php
+Disallow: /html/promocode.php
+Disallow: /html/recipes.php
+
+
+User-agent: Googlebot
+Disallow: /core
+Disallow: /fonts
+Disallow: /html/cart.php
+Disallow: /html/tnx.php
+Disallow: /html/chocolate.php
+Disallow: /html/promocode.php
+Disallow: /html/recipes.php
+
+User-agent: *
+Disallow: /core
+Disallow: /fonts
+Disallow: /html/cart.php
+Disallow: /html/tnx.php
+Disallow: /html/chocolate.php
+Disallow: /html/promocode.php
+Disallow: /html/recipes.php
+
+Sitemap: https://lukumbar.ru/sitemap.xml

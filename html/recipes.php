@@ -1,4 +1,4 @@
-<?php require('templates/header.php');
+<?php require('../templates/header.php');
 ?>
 <div class="recipes">
     <div class="container container-top">
@@ -6,9 +6,9 @@
         <p class="recipes__info">В разработке</p>
     </div>
 </div>
-<?php require('templates/footer.php');
+<?php require('../templates/footer.php');
 ?>
-    <script src="js/jq-3.5.1.js"></script>
-    <script src="js/script2.js"></script>
+    <script src="/js/jq-3.5.1.js"></script>
+    <script src="/js/script2.js"></script>
     </body>
 </html>

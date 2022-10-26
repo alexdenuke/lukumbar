@@ -3,25 +3,25 @@
    <footer class="footer">
       <div class="container container__footer">
          <ul class="footer__nav">
-            <li class="footer__nav-link"><a href="info.php">о компании</a></li>
-            <li class="footer__nav-link"><a href="qualitycontrol.php">контроль качества</a></li>
-            <li class="footer__nav-link"><a href="wholesale.php">оптовикам</a></li>
-            <li class="footer__nav-link"><a href="cooperation.php">сотрудничество</a></li>
-            <li class="footer__nav-link2"><a href="discount.php">скидки</a></li>
-            <li class="footer__nav-link2"><a href="news.php">новости</a></li>
-            <li class="footer__nav-link2"><a href="contact.php">телефон</a></li>
-            <li class="footer__nav-link2"><a href="privacypolicy.php">политика конфиденциальности</a></li>
+            <li class="footer__nav-link"><a href="/html/info.php">о компании</a></li>
+            <li class="footer__nav-link"><a href="/html/qualitycontrol.php">контроль качества</a></li>
+            <li class="footer__nav-link"><a href="/html/wholesale.php">оптовикам</a></li>
+            <li class="footer__nav-link"><a href="/html/cooperation.php">сотрудничество</a></li>
+            <li class="footer__nav-link2"><a href="/html/discount.php">скидки</a></li>
+            <li class="footer__nav-link2"><a href="/html/news.php">новости</a></li>
+            <li class="footer__nav-link2"><a href="/html/contact.php">телефон</a></li>
+            <li class="footer__nav-link2"><a href="/html/privacypolicy.php">политика конфиденциальности</a></li>
          </ul>
          <ul class="footer__nav border">
-            <li class="footer__nav-link"><a href="discount.php">скидки</a></li>
-            <li class="footer__nav-link"><a href="contact.php">телефон</a></li>
-            <li class="footer__nav-link"><a href="news.php">новости</a></li>
-            <li class="footer__nav-link"><a href="privacypolicy.php">политика конфиденциальности</a></li>
+            <li class="footer__nav-link"><a href="/html/discount.php">скидки</a></li>
+            <li class="footer__nav-link"><a href="/html/contact.php">телефон</a></li>
+            <li class="footer__nav-link"><a href="/html/news.php">новости</a></li>
+            <li class="footer__nav-link"><a href="/html/privacypolicy.php">политика конфиденциальности</a></li>
          </ul>
          <div class="footer__contact">
             <p>розничный магазин "Лукумбар"</p>
             <p>м. фрунзенская, комсомольский пр-т 24к1</p>
-            <p>часы работы: 10:00 - 22:00</p>
+            <p>часы работы: 10:00 - 21:30</p>
          </div>
          <div class="footer__social">
             <a href="https://www.facebook.com/alexdenuke/" class="footer__social-link"><img src="img/social/facebook.svg" alt=""></a>

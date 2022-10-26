@@ -90,20 +90,22 @@ let cart = {};
 
 
 function init() {
-   $.getJSON("goods.json", goodsOut );
+   $.getJSON("/json/goods.json", goodsOut );
 }
 
 function goodsOut(data) {
+   let title = document.querySelector('.title');
+   let description = document.querySelector('.description');
    let out = '';
    for (let key in data) {
-      if (key < 50 && (window.location.pathname == '/lukumbar/index.php' || window.location.pathname == '/lukumbar/')) {
+      if (key < 50 && (window.location.pathname == '/index.php' || window.location.pathname == '/')) {
+         title.textContent = 'купить турецкий лукум в Москве с доставкой на дом';
+         description.content = 'Интернет-магазин турецких товаров приветствует вас. Лукум прямо из Турции с доставкой к вам домой. ЛЕГКО!';
          out += '<div class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
-         out += '<a href="productcard.php" class="catalog__img-link">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
-         out += '</a>';
          out += '</div>';
-         out += `<p class="catalog__name">${data[key]['name']}</p>`;
+         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -116,14 +118,14 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
-      if (key > 50 && key < 101 &&  window.location.pathname == '/lukumbar/pahlava.php') {
+      if (key > 50 && key < 101 &&  window.location.pathname == '/html/pahlava.php') {
+         title.textContent = 'купить турецкую пахлаву в Москве с доставкой на дом';
+         description.content = 'Интернет-магазин турецких товаров приветствует вас. Свежайшая пахлава прямо из печи с доставкой по Москве и ближнему подмосковью. РЕШЕНО!';
          out += '<div class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
-         out += '<a href="productcard.php" class="catalog__img-link">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
-         out += '</a>';
          out += '</div>';
-         out += `<div class="catalog__name">${data[key]['name']}</div>`;
+         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -135,14 +137,14 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
-      if (key > 100 && key < 151 && window.location.pathname == '/lukumbar/halva.php') {
+      if (key > 100 && key < 151 && window.location.pathname == '/html/halva.php') {
+         title.textContent = 'купить тахинную халву в Москве с доставкой на дом';
+         description.content = 'Интернет-магазин турецких товаров приветствует вас. Настоящая халва от лучших мастеров с доставкой по всей галактике. ТАК ТОЧНО!';
          out += '<div class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
-         out += '<a href="productcard.php" class="catalog__img-link">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
-         out += '</a>';
          out += '</div>';
-         out += `<div class="catalog__name">${data[key]['name']}</div>`;
+         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -154,14 +156,14 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
-      if (key > 150 && key < 201 && window.location.pathname == '/lukumbar/tea.php') {
+      if (key > 150 && key < 201 && window.location.pathname == '/html/tea.php') {
+         title.textContent = 'купить тот самый турецкий чай с доставкой на дом.';
+         description.content = 'Интернет-магазин турецких товаров приветствует вас. Это тот самый чай (чайкур) который вы так любите пить в Турции. НЕ БЛАГОДАРИТЕ!';
          out += '<div class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
-         out += '<a href="productcard.php" class="catalog__img-link">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
-         out += '</a>';
          out += '</div>';
-         out += `<div class="catalog__name">${data[key]['name']}</div>`;
+         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -173,14 +175,14 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
-      if (key > 200 && key < 251 &&  window.location.pathname == '/lukumbar/coffee.php') {
+      if (key > 200 && key < 251 &&  window.location.pathname == '/html/coffee.php') {
+         title.textContent = 'купить турецкий кофе мехмет эфенди';
+         description.content = 'Интернет-магазин турецких товаров приветствует вас. Легендарный во всех смыслах турецкий кофе mehmet efendi с доставкой. НАСЛАЖДАЙТЕСЬ!';
          out += '<div class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
-         out += '<a href="productcard.php" class="catalog__img-link">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
-         out += '</a>';
          out += '</div>';
-         out += `<div class="catalog__name">${data[key]['name']}</div>`;
+         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -196,7 +198,6 @@ function goodsOut(data) {
    $('.catalog').html(out);
    $('.catalog__btn-buy').on('click', addToCart);
 
-   
    function chooseWeight() {
       let weight = document.querySelectorAll(".catalog__weight");
       for (let i = 0; i < weight.length; i++) {
@@ -284,13 +285,6 @@ function goodsOut(data) {
     
       setTimeout(()=>document.body.removeChild(picture2),560);
    }
-
-   function getTitle () {
-      console.log(data);
-   }
-
-   getTitle();
-
 
 
 }

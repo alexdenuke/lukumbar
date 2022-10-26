@@ -1,6 +1,6 @@
 <?php 
 // читать json файл 
-$json = file_get_contents('../goods.json');
+$json = file_get_contents('../json/goods.json');
 $json = json_decode($json, true);
 
 // письмо
@@ -42,7 +42,7 @@ $message .='всего:' .$sum ."<br>без учёта доставки";
 
 
 
-$to = 'alexdenuke@gmail.com'.',';
+$to = 'alexdenuke@yandex.ru'.',';
 $to .= $_POST['email'];
 $spectext = '<!DOCTYPE HTML><html><head><title>заказ</title></head><body>';
 $headers = 'MIME-Version: 1.0' . "\r\n";

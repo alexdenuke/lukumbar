@@ -8,13 +8,14 @@
          />
          <meta name="facebook-domain-verification" content="1oormiaey4b31eqo0o9f96cwtu0izf" />   
       <title>lukumbar</title>
+      <meta name="yandex-verification" content="916e2a295ce04105" />
       <link rel="icon" href="icon.ico" type="image/x-icon">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/reset.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/scroll.css">
+      <link rel="stylesheet" href="/css/reset.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/scroll.css">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -55,11 +56,11 @@
                <div class="container">
                   <nav class="header__nav">
                      <ul class="header__menu">
-                        <li class="header__menu-link"><a href="index.php">Пахлава</a></li>
-                        <li class="header__menu-link"><a href="lukum.php">Лукум</a></li>
-                        <li class="header__menu-link"><a href="halva.php">Халва</a></li>
-                        <li class="header__menu-link"><a href="tea.php">Чай</a></li>
-                        <li class="header__menu-link"><a href="coffee.php">Кофе</a></li>
+                        <li class="header__menu-link"><a href="/index.php">Пахлава</a></li>
+                        <li class="header__menu-link"><a href="/lukum.php">Лукум</a></li>
+                        <li class="header__menu-link"><a href="/halva.php">Халва</a></li>
+                        <li class="header__menu-link"><a href="/tea.php">Чай</a></li>
+                        <li class="header__menu-link"><a href="/coffee.php">Кофе</a></li>
                         <li class="header__menu-link">
                            <a href="contact.php">Контакты</a>
                         </li>
@@ -83,18 +84,18 @@
                         <div class="header__nav-btn-menu-wrap">
                            <button class="header__nav-btn-menu">меню</button>
                            <div class="header__nav__dropdown-on">
-                              <a href="index.php" class="header__nav-dropdown-link">Лукум</a>
-                              <a href="lukum.php" class="header__nav-dropdown-link">Пахлава</a>
-                              <a href="halva.php" class="header__nav-dropdown-link">Халва</a>
-                              <a href="tea.php" class="header__nav-dropdown-link">Чай</a>
-                              <a href="coffee.php" class="header__nav-dropdown-link">Кофе</a>
+                              <a href="/index.php" class="header__nav-dropdown-link">Лукум</a>
+                              <a href="/lukum.php" class="header__nav-dropdown-link">Пахлава</a>
+                              <a href="/halva.php" class="header__nav-dropdown-link">Халва</a>
+                              <a href="/tea.php" class="header__nav-dropdown-link">Чай</a>
+                              <a href="/coffee.php" class="header__nav-dropdown-link">Кофе</a>
                            </div>
                         </div>
                         <a href="contact.php" class="header__nav-btn">контакты</a>
                         <a href="delivery.php" class="header__nav-btn">доставка</a>
                      </div>
                      <div class="header__nav-phone">8(926)920-59-13 </div>
-                     <a class="header__nav-cart" href="cart.php"><img class="header__cart-img"  src="img/cart.svg" alt=""><span class="header__cart-amount"></span></a>
+                     <a class="header__nav-cart" href="cart.php"><img class="header__cart-img"  src="/img/cart.svg" alt=""><span class="header__cart-amount"></span></a>
                   </nav>
                </div>
             </header>
