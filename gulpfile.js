@@ -3,10 +3,17 @@ const browserSync = require("browser-sync").create(); // подключаем br
 
 function server() {
     browserSync.init({
-        proxy: "lukumbar.local"
+        proxy: "online-shop.local",
+        // logConnections: false,
+        // snippet: false,
+        // reloadOnRestart: false,
+        notify: false
     });
 
-    watch("index.php").on('change', browserSync.reload);
+    watch("*.*").on('change', browserSync.reload);
+    watch("*/*.*").on('change', browserSync.reload);
+
+
 }
 
 

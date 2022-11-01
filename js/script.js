@@ -29,62 +29,6 @@ window.onclick = function (event) {
    }
 };
 //---------------------------------
-//-----------слайдер---------------
-// let slides = document.querySelectorAll(".slide");
-// let prev = document.querySelector(".slide__prev-img");
-// let next = document.querySelector(".slide__next-img");
-// let dots = document.querySelectorAll(".slider__dot");
-// let index = 0;
-// let activeSlide = (n) => {
-//    for (slide of slides) {
-//       slide.classList.remove("active");
-//    }
-//    slides[n].classList.add("active");
-// };
-// let activeDot = (n) => {
-//    for (dot of dots) {
-//       dot.classList.remove("active");
-//    }
-//    dots[n].classList.add("active");
-// };
-// let prepareCurrentSlide = (ind) => {
-//    activeSlide(ind);
-//    activeDot(ind);
-// };
-// let nxtSlide = () => {
-//    if (index == slides.length - 1) {
-//       index = 0;
-//       prepareCurrentSlide(index);
-//       clearInterval(interval);
-//    } else {
-//       index++;
-//       prepareCurrentSlide(index);
-//       clearInterval(interval);
-      
-//    }
-// };
-// let prevSlide = () => {
-//    if (index == 0) {
-//       index = slides.length - 1;
-//       prepareCurrentSlide(index);
-//       clearInterval(interval);
-//    } else {
-//       index--;
-//       prepareCurrentSlide(index);
-//       clearInterval(interval);
-//    }
-// };
-// dots.forEach((item, indexDot) => {
-//    item.addEventListener("click", () => {
-//       index = indexDot;
-//       prepareCurrentSlide(index);
-//       clearInterval(interval);
-//    });
-// });
-// next.addEventListener("click", nxtSlide);
-// prev.addEventListener("click", prevSlide);
-// const interval = setInterval(nxtSlide, 3000);
-//--------------------------------------
 //-------------корзина------------------
 let cart = {};
 
@@ -98,7 +42,7 @@ function goodsOut(data) {
    let description = document.querySelector('.description');
    let out = '';
    for (let key in data) {
-      if (key < 50 && (window.location.pathname == '/index.php' || window.location.pathname == '/')) {
+      if (key < 50 && window.location.pathname == '/html/lukum.php') {
          title.textContent = 'купить турецкий лукум в Москве с доставкой на дом';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Лукум прямо из Турции с доставкой к вам домой. ЛЕГКО!';
          out += '<div class="catalog__item">';

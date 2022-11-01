@@ -24,10 +24,12 @@
             <p>часы работы: 10:00 - 21:30</p>
          </div>
          <div class="footer__social">
-            <a href="https://www.facebook.com/alexdenuke/" class="footer__social-link"><img src="img/social/facebook.svg" alt=""></a>
-            <a href="https://www.instagram.com/turklum.ru/" class="footer__social-link"><img src="img/social/instagram.svg" alt=""></a>
+            <!-- <a href="https://www.facebook.com/alexdenuke/" class="footer__social-link"><img src="img/social/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/turklum.ru/" class="footer__social-link"><img src="img/social/instagram.svg" alt=""></a> -->
             <a href="https://vk.com/public131143405" class="footer__social-link"><img src="img/social/vk.svg" alt=""></a>
             <a href="https://api.whatsapp.com/send?phone=+79259899069&text=Добрый%20День!" class="footer__social-link flex"><img src="img/social/whatsapp.svg" alt=""></a>
+            <a href="#" class="footer__social-link"><img src="img/social/facebook.svg" alt=""></a>
+            <a href="#" class="footer__social-link"><img src="img/social/instagram.svg" alt=""></a>
             <p class="footer__social-adaptiv">все права защищены.</p>
          </div>
       </div>
