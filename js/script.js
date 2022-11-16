@@ -1,4 +1,11 @@
 
+// let header = document.querySelector('.category');
+
+// header.addEventListener('click', () => {
+//    article2 = 10;
+// })
+
+
 //--------------бургер--------------
 let burgerWrap = document.querySelector(".header__burger-wrap");
 let burger = document.querySelector(".header__burger");
@@ -32,6 +39,9 @@ window.onclick = function (event) {
 //-------------корзина------------------
 let cart = {};
 
+let article = '';
+
+
 
 function init() {
    $.getJSON("/json/goods.json", goodsOut );
@@ -45,11 +55,11 @@ function goodsOut(data) {
       if (key < 50 && window.location.pathname == '/html/lukum.php') {
          title.textContent = 'купить турецкий лукум в Москве с доставкой на дом';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Лукум прямо из Турции с доставкой к вам домой. ЛЕГКО!';
-         out += '<div class="catalog__item">';
+         out += '<h2 class="catalog__item">';
          out += '<div class="catalog__img-wrap">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
          out += '</div>';
-         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
+         out += `<a href="/html/detail.php" class="catalog__name">${data[key]['name']}</a>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -62,6 +72,7 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
+
       if (key > 50 && key < 101 &&  window.location.pathname == '/html/pahlava.php') {
          title.textContent = 'купить турецкую пахлаву в Москве с доставкой на дом';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Свежайшая пахлава прямо из печи с доставкой по Москве и ближнему подмосковью. РЕШЕНО!';
@@ -69,7 +80,7 @@ function goodsOut(data) {
          out += '<div class="catalog__img-wrap">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
          out += '</div>';
-         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
+         out += `<a href="/html/detail.php" class="catalog__name">${data[key]['name']}</a>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -81,6 +92,7 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
+
       if (key > 100 && key < 151 && window.location.pathname == '/html/halva.php') {
          title.textContent = 'купить тахинную халву в Москве с доставкой на дом';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Настоящая халва от лучших мастеров с доставкой по всей галактике. ТАК ТОЧНО!';
@@ -88,7 +100,7 @@ function goodsOut(data) {
          out += '<div class="catalog__img-wrap">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
          out += '</div>';
-         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
+         out += `<a href="/html/detail.php" class="catalog__name">${data[key]['name']}</a>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -100,6 +112,7 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
+
       if (key > 150 && key < 201 && window.location.pathname == '/html/tea.php') {
          title.textContent = 'купить тот самый турецкий чай с доставкой на дом.';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Это тот самый чай (чайкур) который вы так любите пить в Турции. НЕ БЛАГОДАРИТЕ!';
@@ -107,7 +120,7 @@ function goodsOut(data) {
          out += '<div class="catalog__img-wrap">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
          out += '</div>';
-         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
+         out += `<a href="/html/detail.php" class="catalog__name">${data[key]['name']}</a>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -119,6 +132,7 @@ function goodsOut(data) {
          out += '</div>';
          out += '</div>';
       }
+
       if (key > 200 && key < 251 &&  window.location.pathname == '/html/coffee.php') {
          title.textContent = 'купить турецкий кофе мехмет эфенди';
          description.content = 'Интернет-магазин турецких товаров приветствует вас. Легендарный во всех смыслах турецкий кофе mehmet efendi с доставкой. НАСЛАЖДАЙТЕСЬ!';
@@ -126,7 +140,7 @@ function goodsOut(data) {
          out += '<div class="catalog__img-wrap">';
          out += `<img class="catalog__img" data-id="${key}" src="${data[key].img}">`;
          out += '</div>';
-         out += `<h2 class="catalog__name">${data[key]['name']}</h2>`;
+         out += `<a href="/html/detail.php" class="catalog__name">${data[key]['name']}</a>`;
          out += '<div class="catalog__weight-wrap">';
          out += `<button data-id="${key}" class="catalog__weight active">${data[key]['weight'][0]} гр</button>`;
          out += `<button data-id="${key}" class="catalog__weight">${data[key]['weight'][1]} гр</button>`;
@@ -141,6 +155,26 @@ function goodsOut(data) {
    }
    $('.catalog').html(out);
    $('.catalog__btn-buy').on('click', addToCart);
+
+   // let link = document.querySelectorAll('.catalog__name');
+   let catalogName = document.querySelectorAll('.catalog__name');
+
+   // for (let i = 0; i < catalogName.length; i++){
+   //    catalogName[i].addEventListener('click', () => {
+   //       document.location.href = '/html/detail.php';
+   //    })
+   // }
+
+   catalogName.forEach(item => {
+      item.addEventListener('click', () => {
+         article = item.previousElementSibling.lastElementChild.dataset.id;
+         localStorage.setItem('article',article);
+         console.log(article);
+         alert(article);
+
+      })
+   })
+
 
    function chooseWeight() {
       let weight = document.querySelectorAll(".catalog__weight");
@@ -186,7 +220,6 @@ function goodsOut(data) {
       }
       saveCart();
       headerCartAmount(cart);
-     
    }
 
    let animeButton = document.querySelectorAll('.catalog__btn-buy');
@@ -230,7 +263,6 @@ function goodsOut(data) {
       setTimeout(()=>document.body.removeChild(picture2),560);
    }
 
-
 }
 
 function saveCart() {
@@ -266,8 +298,6 @@ function loadCart() {
 }
 
 
-
-
 $(document).ready(function () {
       // проверя. есть ли в localStorage запись cart
       if (localStorage.getItem('cart')) {
@@ -279,8 +309,5 @@ $(document).ready(function () {
    headerCartAmount(cart);
    saveCart()
 });
-
-
-
 
 

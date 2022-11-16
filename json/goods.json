@@ -1,6 +1,7 @@
 {
    "1": {
       "name": "Султан с фундуковой пастой в дробленом фундуке",
+      "description": "Описание с жэйсона",
       "img": "/img/lukum/sultan_hazelnutpasta.jpg",
       "cost": {
          "0": 320,

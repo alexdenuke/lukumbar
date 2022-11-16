@@ -392,6 +392,12 @@ a {
   flex-grow: 0;
   
 }
+
+.catalog__item:hover .catalog__img {
+  /* transition: all 0.5s ease 0s; */
+  transform: scale(1.1);
+}
+
 @media(max-width:767px) {
   .catalog__item {
     flex-basis: calc(50% - 15px);
@@ -421,9 +427,13 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  transition: all 0.3s ease 0s;
 }
-
+.catalog__name:hover {
+  color: rgb(0, 0, 207);
+}
 .catalog__name {
+  display: block;
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -431,6 +441,7 @@ a {
   height: 56px;
   overflow-y: auto;
   color: #b1004a;
+  transition: all 0.3s ease 0s;
   /* font-weight: 500; */
 }
 @media(max-width:767px) {

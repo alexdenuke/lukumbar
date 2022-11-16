@@ -4,10 +4,10 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-   <title class="title">Купить пахлаву с доставкой на дом в Москве</title>
+   <title class="title">Описание товаров в лукумбар</title>
    <meta name="yandex-verification" content="916e2a295ce04105" />
    <meta class="description" name="description"
-      content="Турецкая пахлава от лучших турецких кондитеров в Москве">
+      content="Подробное поисание товаров в интернет-магазине lukumbar">
 
    <link rel="icon" href="/icon/icon.ico" type="image/x-icon">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -39,15 +39,32 @@
 
 <?php require('../templates/header.php');
 ?>
-<div class="catalog__container">
-  <h1 class="category">Свежая турецкая пахлава только из печи!</h1>
-  <div class="mini-cart"></div>
-  <div class="catalog"></div>
+
+<div class="container">
+    <div class="detail">
+        <div class="detail__wrap-img">
+            <img src="/img/pahlava/pahlava_chocolate.jpg" alt="" class="detail__img">
+        </div>
+        <div class="detail__wrap-info">
+            <div class="detail__info-scroll">
+                <h1 class="detail__name">
+                    Пахлава такая-то с тем-то и тем-то
+                </h1>
+                <div class="detail__weight">
+                    Вес: 500 гр
+                </div>
+                <div class="detail__description"></div>
+            </div>
+            <div class="detail__wrap-botton">
+                <div class="detail__price">Цена: 1234 р</div>
+                <button class="detail__button">В корзину</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script src="/js/jq-3.5.1.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/detail.js"></script>
 <?php require('../templates/footer.php');
 ?>
-    <script src="/js/jq-3.5.1.js"></script>
-    <script src="/js/script.js"></script>
-    <!-- <div class="popup__container"></div> -->
-    </body>
-</html>
